@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Scalaでラムダをいろいろ @shigemk2</title>
+    <title>文字列とC++ @shigemk2</title>
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
@@ -39,51 +39,45 @@
       <q>http://qiita.com/7shi/items/cac7b3e9b90bf91b00cc</q>
     </div>
     <div class="step slide" data-x="4000" data-y="-1500">
-      <q>C++よくわからないので、雑感をつらつらまとめていきます。</q>
+      <q>これでC++をごにょごにょして、分からなかったところをつらつら発表してみる</q>
     </div>
     <div class="step slide" data-x="5000" data-y="-1500">
-      <q>関数型言語とかコンパイル言語とかやったことないから、Scalaをちょっと頑張ってみたくなった</q>
+      <q style="margin-top: 0;">参照</q>
+      <img width="800" height="500" src="./img/cpp_refer.png" />
     </div>
     <div class="step slide" data-x="6000" data-y="-1500">
-      <q>ではスタート</q>
+      <q>ポインタと参照の違い</q>
     </div>
     <div class="step slide" data-x="7000" data-y="-1500">
-      <q style="margin-top: 0;">きほん</q>
-      <img width="800" height="500" src="./img/scala_lambda_first.png" />
+      <q>参照は、値を取り出すのにデリファレンスが必要ないポインタ</q>
     </div>
     <div class="step slide" data-x="8000" data-y="-1500">
-      <q style="margin-top: 0;">インライン</q>
-      <q>println(((x: Int) => x + 1)(1))</q>
+      <q>参照は、値を取り出すのにデリファレンスが必要ないポインタ</q>
     </div>
     <div class="step slide" data-x="9000" data-y="-1500">
-      <q style="margin-top: 0;">高階関数</q>
-      <img width="800" height="500" src="./img/scala_lambda_parameters.png" />
+      <q>大事なことなので(ry</q>
     </div>
     <div class="step slide" data-x="10000" data-y="-1500">
-      <img width="800" height="600" src="./img/scala_lambda_curry.png" />
+      <q>なんのことなのか</q>
     </div>
     <div class="step slide" data-x="11000" data-y="-1500">
-      <img width="800" height="600" src="./img/scala_lambda_partial.png" />
+      <q style="margin-top: 0;">わからんので逆アセンブルしてみる</q>
+      <img width="800" height="500" src="./img/cpp_refer_pointer.png" />
     </div>
     <div class="step slide" data-x="12000" data-y="-1500">
-      <q style="margin-top: 0;">再帰で再実装とか</q>
-      <img width="800" height="500" src="./img/scala_lambda_recursion.png" />
+      <q>g++ -O -fomit-frame-pointer -m64 -c -g param.cpp</q>
     </div>
     <div class="step slide" data-x="13000" data-y="-1500">
-      <q style="margin-top: 0;">バブルソートとか</q>
-      <img width="800" height="500" src="./img/scala_lambda_bubble.png" />
+      <q style="margin-top: 0;">結果</q>
+      <img width="800" height="500" src="./img/cpp_disasm.png" />
     </div>
     <div class="step slide" data-x="14000" data-y="-1500">
-      <q style="margin-top: 0;">Yコンビネータとか</q>
-      <img width="800" height="500" src="./img/scala_lambda_ycombinator.png" />
+      <q>一緒</q>
     </div>
     <div class="step slide" data-x="15000" data-y="-1500">
-      <q>まとめ</q>
+      <q>バイナリレベルでいったら、参照もポインタも一緒やったんや</q>
     </div>
     <div class="step slide" data-x="16000" data-y="-1500">
-      <q>ちょっとだけScalaわかってきた</q>
-      <q>他の言語から移植するのは頭のトレーニングとしては良いと思う</q>
-      <q>マサカリがあればください</q>
     </div>
 </div>
 
