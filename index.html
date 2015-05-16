@@ -86,56 +86,53 @@
       <q>const参照</q>
     </div>
     <div class="step slide" data-x="17000" data-y="-1500">
-      <q style="margin-top: 0;">C++だとこうじゃろ?</q>
-      <img width="820" height="570" src="./img/cpp_const_refer.png" />
+      <q style="margin-top: 0;">コード</q>
+      <img width="820" height="570" src="./img/refer.png" />
     </div>
     <div class="step slide" data-x="18000" data-y="-1500">
-      <q style="margin-top: 0; line-height: 40px; font-size: 20px;">Scalaだとこうじゃ</q>
-      <q style="margin-top: 0; line-height: 40px; font-size: 20px;">ポインタがないからvalで代用してる</q>
-      <q style="margin-top: 0; line-height: 40px; font-size: 20px;">でもあんまりconstと変わらないかも</q>
-      <img width="800" height="500" src="./img/scala_const.png" />
+      <q style="margin: 15px; line-height: 60px;">const参照は引数を書き換えられない参照</q>
+      <q style="margin: 15px; line-height: 60px;">Scalaだとポインタがないからvalで代用してる</q>
+      <q style="margin: 15px; line-height: 60px;">引数を書き換えられない点ではconst参照と変わらない</q>
     </div>
     <div class="step slide" data-x="19000" data-y="-1500">
       <q>コンストラクタまわり</q>
     </div>
     <div class="step slide" data-x="20000" data-y="-1500">
-      <q style="margin-top: 0;">Scalaだとこうじゃろ?</q>
-      <img width="820" height="570" src="./img/mystr_scala_1.png" />
+      <q style="margin-top: 0;">コード</q>
+      <img width="820" height="570" src="./img/constructor.png" />
     </div>
     <div class="step slide" data-x="21000" data-y="-1500">
-      <q style="margin-top: 0;">C++だとこうじゃ</q>
-      <img width="820" height="570" src="./img/mystr_cpp_1.png" />
+      <q>C++ new int[5] →newしたらdeleteが必要</q>
+      <q>Scala new Array[Int](5) newしてもGCでどうにかなる</q>
     </div>
     <div class="step slide" data-x="22000" data-y="-1500">
-      <q>C++だとコンストラクタやデストラクタを実装しないといけない</q>
+      <q style="margin-top: 0;">でもファイル操作だとクローズ処理が必要になる</q>
+      <img width="820" height="570" src="./img/constructor.png" />
     </div>
     <div class="step slide" data-x="23000" data-y="-1500">
-      <q>RAII的なアレ</q>
-      <q>C++だとメモリの確保にコードを各必要があった(new/delete)</q>
+      <q>なお</q>
+      <q>http://etc9.hatenablog.com/entry/20090825/1251183286</q>
     </div>
     <div class="step slide" data-x="24000" data-y="-1500">
-      <q>メンバ変数をRAIIに任せればデストラクタ不要</q>
-      <q>ヒープインスタンスが作られる</q>
-      <q>後者を片付けるGC、GCのタイミングが予想できないとファイナライザが呼ばれるタイミングが予測できない</q>
+      <q>だからデストラクタが必要かどうかは状況による</q>
     </div>
     <div class="step slide" data-x="25000" data-y="-1500">
       <q>複素数</q>
     </div>
     <div class="step slide" data-x="26000" data-y="-1500">
-      <q style="margin-top: 0;">Scalaだとこうじゃろ?</q>
-      <img width="800" height="550" src="./img/complex_scala.png" />
+      <q>なんとなくHello, Worldの新提案な感じがあるので実装してみる</q>
     </div>
     <div class="step slide" data-x="27000" data-y="-1500">
-      <q style="margin-top: 0;">C++だとこうじゃ</q>
-      <img width="800" height="550" src="./img/complex_cpp.png" />
+      <q style="margin-top: 0;">コード</q>
+      <img width="800" height="550" src="./img/complex.png" />
     </div>
     <div class="step slide" data-x="28000" data-y="-1500">
-      <q>実装しんどい</q>
+      <q>表示まわりの実装が、場合分け多くてつらい でもパターンマッチ使うとちょっと楽かも</q>
     </div>
     <div class="step slide" data-x="29000" data-y="-1500">
-      <q>課題</q>
-      <q>Scalaを知るにはJVMを知らなければならない</q>
-      <q>コンストラクタとデストラクタとファイナライザの違い</q>
+      <q style="margin: 10px; line-height: 50px;">課題</q>
+      <q style="margin: 15px; line-height: 60px;">Scalaを知るにはJVMを知らなければならない</q>
+      <q style="margin: 15px; line-height: 60px;">コンストラクタとデストラクタとファイナライザの違い</q>
     </div>
     <div class="step slide" data-x="30000" data-y="-1500">
       <q style="margin: 10px; line-height: 50px;">まとめ</q>
@@ -143,7 +140,7 @@
       <q style="margin: 15px; line-height: 60px;">アドレス操作がわかりにくい</q>
       <q style="margin: 15px; line-height: 60px;">実装レベルだとある程度同じことが出来るので、他言語との比較はもっと低レイヤーでやらないとダメな気がした</q>
     </div>
-    <div class="step slide" data-x="31000" data-y="-1500">
+p    <div class="step slide" data-x="31000" data-y="-1500">
       <q>最後に</q>
     </div>
     <div class="step slide" data-x="32000" data-y="-1500">
